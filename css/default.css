@@ -1,5 +1,5 @@
 
-body{color:black;font-size:15px;margin:0px auto 0px auto;width:95%}
+/* body{color:black;font-size:15px;margin:0px auto 0px auto;width:95%}
 div#header{margin-bottom:30px;padding:12px 0px 12px 0px}
 div#header #navigation{text-align:center}
 div#header #navigation a{color:black;font-size:14px;font-weight:bold;margin-left:12px;text-decoration:none}
@@ -16,7 +16,7 @@ h3 {
 	padding: 5px 15px;
 	color: white;
 	box-shadow: inset 0 0 5px rgba(53,86,129, 0.5);
-}
+} */
 
 
 td {height: 35px}
@@ -28,6 +28,14 @@ img {
 }
 
 div.info{color:#555;font-size:14px;font-style:italic}
+
+.footer-text {
+    text-align: center;
+}
+
+.to-be-determined {
+    color: #D00
+}
 
 /*
 unvisited link
