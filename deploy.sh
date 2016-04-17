@@ -10,7 +10,7 @@
 # Author: Alexander Vandenbroucke <alexander.vandenbroucke@kuleuven.be>
 
 # static configuration settings
-REMOTE=clarke.cs.kuleuven.be
+REMOTE=ssh.cs.kuleuven.be
 REMOTE_DIR=/cw/vwww1/dtai_static/public_html/static/events/ifl2016/
 LOCAL_DIR=./
 
