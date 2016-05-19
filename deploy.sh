@@ -15,22 +15,30 @@ REMOTE_DIR=/cw/vwww1/dtai_static/public_html/static/events/ifl2016/
 LOCAL_DIR=./
 
 
-echo -n "Please enter your username: "
-read user
-echo "Deploying as $user..."
+
 
 if [ `pwd | xargs basename` = "ifl2016-website" ]
-   then
+then
+    if [ `git branch | grep "master"` = "* master" ]
+    then
+	
+	echo -n "Please enter your username: "
+	read user
+	echo "Deploying as $user..."
+
        echo [local] from $LOCAL_DIR
        echo [$REMOTE] to $REMOTE_DIR
 
        rsync -rav --chmod="g+w" $LOCAL_DIR/* $user@$REMOTE:$REMOTE_DIR
 
        if [ $? -eq 0 ]
-          then
-	      echo Done.
+       then
+	   echo Done.
        fi
-   else
-       echo "This script must be run from the ifl2016-website directory!"
+    else
+	echo "ERROR: Please deploy only from the master branch!"
+    fi
+else
+    echo "ERROR: This script must be run from the ifl2016-website directory!"
 fi
 
