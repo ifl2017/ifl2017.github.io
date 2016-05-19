@@ -90,23 +90,22 @@ receive a confirmation email within 48 of completing your registration.
 <h3>Fees</h3>
 <ul class="list-group">
   <li class="list-group-item">
-    Student (Early Bird): 225 Euro
+    Student (Early Bird): 225 Euros
   </li>
   <li class="list-group-item">
-    <td>Student (Late Bird)</td>
-    <td>275 Euro</td>
+    Student (Late Bird): 275 Euros
   </li>
   <li class="list-group-item">
-    Regular (Early Bird): 300 Euro
+    Regular (Early Bird): 300 Euros
   </li>
   <li class="list-group-item">
-    Student (Early Bird): 350 Euro
+    Student (Early Bird): 350 Euros
   </li>
 </ul>
 
 <hr />
 <h3>Payement</h3>
-Please pay with either credit card or by bank transfer.
+Please pay either with credit card or by bank transfer.
 
 <div class="row">
   <div class="col-md-6">
@@ -115,6 +114,27 @@ Please pay with either credit card or by bank transfer.
 	<h4>Credit Card</h4>
       </div>
       <div class="panel-body">
+	<p class="text-muted">
+	  Note: Upon selecting a formula, the site will immediately open a new tab to the (non-local) payment site.
+	</p>
+
+	<form class="form-inline">
+	  <label class = "sr-only" for="fee">Fee</label>
+	  <div class="dropdown" id="fee">
+	    <button class="btn btn-default dropdown-toggle" type="button" id="dropdown-menu" data-toggle="dropdown"
+		    aria-haspopup="true" aria-expanded="true">
+	      Choose fee
+	      <span class="caret"></span>
+	    </button>
+	    <ul class="dropdown-menu" aria-labelledby="dropdown-menu">
+	      <li><a href="javascript:creditcard('student','early')">Student - Early Bird</a></li>
+	      <li><a href="javascript:creditcard('student','late')">Student - Late Bird</a></li>
+	      <li><a href="javascript:creditcard('regular','early')">Regular - Early Bird</a></li>
+	      <li><a href="javascript:creditcard('regular','late')">Regular - Late Bird</a></li>
+	    </ul>
+	  </div>
+	</form>
+	<p><noscript>Please enable javascript to use this payment option</noscript></p>
       </div>
     </div>
   </div>
@@ -138,7 +158,7 @@ Please pay with either credit card or by bank transfer.
 	  <dt>BIC</dt>
 	  <dd>KREDBEBB</dd>
 
-	  <dt>Description</dt>
+	  <dt>Payee</dt>
 	  <dd>400/0013/40962</dd>
 	</dl>
       </div>
@@ -163,7 +183,48 @@ Please pay with either credit card or by bank transfer.
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 
+    <script type="text/javascript">
+      <!--
+	  function creditcard(student,bird) {
+	    fees = {
+	      "student" : {
+	        "early" : "225",
+		"late"  : "275"
+	      },
+	      "regular" : {
+	        "early" : "300",
+		"late"  : "350"
+	      }
+	    }
 
+	    payee       = "400/0013/40962"
+            currency    = "EUR"
+            sub         = "X"
+	    test        = "X"
+	    language    = "en_US"
+            description = "IFL2016"
+	    secure      = "X"
+
+	    base_url    = "https://www.kuleuven.be/sapredir/kredietbetaling_Detail.html"
+
+	    target = base_url
+                   +"?"
+		   + "test="           + test                + "&"
+	           + "ges_mededeling=" + payee               + "&"
+                   + "amount="         + fees[student][bird] + "&"
+		   + "currency="       + currency            + "&"
+		   + "omschrijving="   + description         + "&"
+		   + "taal="           + language            + "&"
+		   + "sub="            + sub                 + "&"
+		   + "secure="         + secure              + "&"
+		   // optional fields
+		   + "bet_nm=name"
+
+            console.log(target)
+	    window.open(target)
+	  }
+	// -->
+    </script>
 </body>
 
 </html>
