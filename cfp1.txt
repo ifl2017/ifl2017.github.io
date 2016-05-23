@@ -1,0 +1,147 @@
+IFL 2016 - Call for papers
+
+28th SYMPOSIUM ON IMPLEMENTATION AND APPLICATION OF FUNCTIONAL LANGUAGES - IFL 2016
+
+KU Leuven, Belgium
+
+In cooperation with ACM SIGPLAN
+
+August 31 - September 2, 2016
+
+https://dtai.cs.kuleuven.be/events/ifl2016/
+
+Scope
+
+The goal of the IFL symposia is to bring together researchers actively engaged
+in the implementation and application of functional and function-based
+programming languages. IFL 2016 will be a venue for researchers to present and
+discuss new ideas and concepts, work in progress, and publication-ripe results
+related to the implementation and application of functional languages and
+function-based programming.
+
+Peer-review
+
+Following the IFL tradition, IFL 2016 will use a post-symposium review process
+to produce the formal proceedings. All participants of IFL 2016 are invited to
+submit either a draft paper or an extended abstract describing work to be
+presented at the symposium. At no time may work submitted to IFL be
+simultaneously submitted to other venues; submissions must adhere to ACM
+SIGPLAN's republication policy:
+
+http://www.sigplan.org/Resources/Policies/Republication
+
+The submissions will be screened by the program committee chair to make sure
+they are within the scope of IFL, and will appear in the draft proceedings
+distributed at the symposium. Submissions appearing in the draft proceedings
+are not peer-reviewed publications. Hence, publications that appear only in the
+draft proceedings are not subject to the ACM SIGPLAN republication policy.
+After the symposium, authors will be given the opportunity to incorporate the
+feedback from discussions at the symposium and will be invited to submit a
+revised full article for the formal review process. From the revised
+submissions, the program committee will select papers for the formal
+proceedings considering their correctness, novelty, originality, relevance,
+significance, and clarity. The formal proceedings will appear in the
+International Conference Proceedings Series of the ACM Digital Library.
+
+Important dates
+
+August 1: Submission deadline draft papers
+August 3: Notification of acceptance for presentation
+August 5: Early registration deadline
+August 12: Late registration deadline
+August 22: Submission deadline for pre-symposium proceedings
+August 31 - September 2: IFL Symposium
+December 1: Submission deadline for post-symposium proceedings
+January 31, 2017: Notification of acceptance for post-symposium proceedings
+March 15, 2017: Camera-ready version for post-symposium proceedings
+
+Submission details
+
+Prospective authors are encouraged to submit papers or extended abstracts to be
+published in the draft proceedings and to present them at the symposium. All
+contributions must be written in English. Papers must use the new ACM two
+columns conference format, which can be found at:
+
+http://www.acm.org/publications/proceedings-template
+
+For the pre-symposium proceedings we adopt a 'weak' page limit of 12 pages. For
+the post-symposium proceedings the page limit of 12 pages is firm.
+
+Authors submit through EasyChair:
+
+https://easychair.org/conferences/?conf=ifl2016
+
+Topics
+
+IFL welcomes submissions describing practical and theoretical work as well as
+submissions describing applications and tools in the context of functional
+programming. If you are not sure whether your work is appropriate for IFL 2016,
+please contact the PC chair at tom.schrijvers@cs.kuleuven.be. Topics of interest include,
+but are not limited to:
+
+- language concepts
+- type systems, type checking, type inferencing
+- compilation techniques
+- staged compilation
+- run-time function specialization
+- run-time code generation
+- partial evaluation
+- (abstract) interpretation
+- metaprogramming
+- generic programming
+- automatic program generation
+- array processing
+- concurrent/parallel programming
+- concurrent/parallel program execution
+- embedded systems
+- web applications
+- (embedded) domain specific languages
+- security
+- novel memory management techniques
+- run-time profiling performance measurements
+- debugging and tracing
+- virtual/abstract machine architectures
+- validation, verification of functional programs
+- tools and programming techniques
+- (industrial) applications
+
+Peter Landin Prize
+
+The Peter Landin Prize is awarded to the best paper presented at the symposium
+every year. The honored article is selected by the program committee based on
+the submissions received for the formal review process. The prize carries a
+cash award equivalent to 150 Euros.
+
+Programme committee
+
+Chair: Tom Schrijvers, KU Leuven, Belgium
+
+- Sandrine Blazy, University of Rennes 1, France 
+- Laura Castro, University of A Coruña, Spain
+- Jacques, Garrigue, Nagoya University, Japan
+- Clemens Grelck, University of Amsterdam, The Netherlands
+- Zoltan Horvath, Eotvos Lorand University, Hungary
+- Jan Martin Jansen, Netherlands Defence Academy, The Netherlands
+- Mauro Jaskelioff, CIFASIS/Universidad Nacional de Rosario, Argentina
+- Patricia Johann, Appalachian State University, USA
+- Wolfram Kahl, McMaster University, Canada 
+- Pieter Koopman, Radboud University Nijmegen, The Netherlands
+- Shin-Cheng Mu, Academia Sinica, Taiwan
+- Henrik Nilsson, University of Nottingham, UK
+- Nikolaos Papaspyrou, National Technical University of Athens, Greece
+- Atze van der Ploeg, Chalmers University of Technology, Sweden
+- Matija Pretnar, University of Ljubljana, Slovenia
+- Tillmann Rendel, University of Tübingen, Germany
+- Christophe Scholliers, Universiteit Gent, Belgium
+- Sven-Bodo Scholz, Heriot-Watt University, UK
+- Melinda Toth, Eotvos Lorand University, Hungary
+- Meng Wang, University of Kent, UK
+- Jeremy Yallop, University of Cambridge, UK
+
+Venue
+
+The 28th IFL will be held in association with the Faculty of Computer Science,
+KU Leuven, Belgium. Leuven is centrally located in Belgium and can be easily
+reached from Brussels Airport by train (~15 minutes). The venue in the
+Arenberg Castle park can be reached by foot, bus or taxi from the city center.
+See the website for more information on the venue.
