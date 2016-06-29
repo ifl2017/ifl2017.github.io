@@ -73,11 +73,6 @@
 	<div class="col-md-10">
 <h3>Registration deadlines</h3>
 <table class="table">
-  <thead>
-    <tr>
-      <th></th>
-    </tr>
-  </thead>
   <tbody>
     <tr>
       <td>Early bird</td>
@@ -145,7 +140,7 @@ registration form <em>before</em> paying the registration fee.
       </div>
       <div class="panel-body">
 	<p class="text-muted">
-	  Note: Upon selecting a formula, the site will immediately open a new tab to the (non-local) payment site.
+	  Note: Upon selecting a fee, the site will immediately open a new tab to the (non-local) payment site.
 	</p>
 
 	<form class="form-inline">
@@ -159,9 +154,9 @@ registration form <em>before</em> paying the registration fee.
 	    </button>
 	    <ul class="dropdown-menu" aria-labelledby="dropdown-menu">
 	      <li><a href="javascript:creditcard('student','early')">Student - Early Bird</a></li>
-	      <li><a href="javascript:creditcard('student','late')">Student - Late Bird</a></li>
+	      <!-- <li><a href="javascript:creditcard('student','late')">Student - Late Bird</a></li> -->
 	      <li><a href="javascript:creditcard('regular','early')">Regular - Early Bird</a></li>
-	      <li><a href="javascript:creditcard('regular','late')">Regular - Late Bird</a></li>
+	      <!-- <li><a href="javascript:creditcard('regular','late')">Regular - Late Bird</a></li> -->
 	    </ul>
 	  </div>
 	</form>
@@ -238,6 +233,7 @@ registration form <em>before</em> paying the registration fee.
 	    language    = "en_US"
             description = "IFL2016"
 	    secure      = "X"
+	    result_url  = "people.cs.kuleuven.be/~alexander.vandenbroucke/ifl2016-website/result.html"
 
 	    base_url    = "https://www.kuleuven.be/sapredir/kredietbetaling_Detail.html"
 
@@ -251,8 +247,7 @@ registration form <em>before</em> paying the registration fee.
 		   + "taal="           + language            + "&"
 		   + "sub="            + sub                 + "&"
 		   + "secure="         + secure              + "&"
-		   // optional fields
-		   + "bet_nm=name"
+		   + "result_URL="     + result_url          + "&"
 
             console.log(target)
 	    window.open(target)
