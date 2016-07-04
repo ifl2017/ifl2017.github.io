@@ -231,9 +231,9 @@ registration form <em>before</em> paying the registration fee.
             sub         = "X"
 	    test        = "X"
 	    language    = "en_US"
-            description = "IFL2016"
+            description = "IFL2016" + "-" + student + "-" + bird
 	    secure      = "X"
-	    result_url  = "people.cs.kuleuven.be/~alexander.vandenbroucke/ifl2016-website/result.html"
+	    result_url  = "dtai.cs.kuleuven.be/events/ifl2016/result.html"
 
 	    base_url    = "https://www.kuleuven.be/sapredir/kredietbetaling_Detail.html"
 
@@ -249,8 +249,8 @@ registration form <em>before</em> paying the registration fee.
 		   + "secure="         + secure              + "&"
 		   + "result_URL="     + result_url          + "&"
 
-            console.log(target)
-	    window.open(target)
+            console.log(encodeURI(target))
+	    window.open(encodeURI(target))
 	  }
 	// -->
     </script>

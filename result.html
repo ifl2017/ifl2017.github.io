@@ -21,7 +21,7 @@
     <title>IFL 2016 - KU Leuven, Belgium</title>
     <link rel="stylesheet" type="text/css" href="./css/default.css" />
   </head>
-  <body>
+  <body onload="fill_in()">
 
     
     <!-- navbar -->
@@ -70,9 +70,32 @@
 	<div class="col-md-1">
 	</div>
 	<div class="col-md-10">
-	  <div id="Message">
-	    
-	  </div>
+	  <h2>
+	    <div style="display:block" class="label label-default" id="message">
+	    </div>
+	  </h2>
+	  <p>
+	  <table class="table table-condensed">
+	    <tr>
+	      <th>Amount:</th>
+	      <td id="amount"></td>
+	    </tr>
+	    <tr>
+	      <th>Date:</th>
+	      <td id="date"></td>
+	    </tr>
+	    <tr>
+	      <th>Description:</th>
+	      <td id="description"></td>
+	    </tr>
+	  </table>
+	  </p>
+	  <p>
+	    <small>
+	      This page is purely informational, it is <strong>not</strong>
+	      a receit.
+	    </small>
+	  </p>
 	</div> <!-- col-md-10 -->
       </div> <!-- row -->
     </div> <!-- container -->
@@ -88,19 +111,118 @@
     </footer>
     <script type="text/javascript">
       <!--
-	  function parse_querystring() {
-	    kv  = {}
-	    str = window.location.toString()
-	    key_start = str.lastIndexOf("?") + 1
-	    while(kv_start != 0) {
-	      key_end   = str.indexOf("=",kv_start)
-	      value_end = 
-	      key       = str.substring(key_start,key_end)
+	  function fill_in() {
+	    r = url(window.location.toString())
+	    message     = document.getElementById("message")
+	    amount      = document.getElementById("amount")
+	    date        = document.getElementById("date")
+	    description = document.getElementById("description")
 
+	    message.innerHTML = decodeURI(r["tekst"])
+
+	    returncode = r["returncode"]
+	    if(returncode.length != 0 && (returncode[0] == "4" 
+	                              ||  returncode[0] == "5" 
+				      ||  returncode[0] == "9")) {
+	      message.className = "label label-success"
+	    } else {
+	      message.className = "label label-danger"
 	    }
 
-	    return kv;
+	    amount.innerHTML      = r["amount"] + " " + r["currency"]
+	    date.innerHTML        = r["datum"]
+	    description.innerHTML = r["omschrijving"]
 	  }
+
+	  /* parsing the parameters of an url */
+	  function url(input) {
+	    u = uri(input)
+	    e = eat("?",u.remainder)
+	    if(e.result == null) {
+	      return {}
+	    } else {
+	      return querystring(e.remainder)
+	    }
+	  }
+
+	  function uri(input) {
+
+	    if(input.length == 0 || input[0] == "?") {
+	      return new Result("",input)
+	    } else {
+	      u = uri(input.substring(1))
+	      u.result = input[0] + u.result
+	      return u
+	    }
+	  }
+
+	  function querystring(input,kvs) {
+	    if(kvs == null) {
+	      kvs = {}
+	    }
+
+	    kv = keyvalue(input)
+	    kvs[kv.result.key] = kv.result.value
+
+	    e = eat("&", kv.remainder)
+
+	    if(e.result != null) {
+	      return querystring(e.remainder, kvs)
+	    } else {
+	      return kvs
+	    }
+	    
+	  }
+
+	  function keyvalue(input) {
+	    k = key(input)
+	    e = eat("=",k.remainder)
+	    if(e.result != null) {
+	      v = value(e.remainder)
+	      return new Result(new KeyValue(k.result, v.result), v.remainder)
+	    } else {
+	      return new Result(new KeyValue(k.result,""), k.remainder)
+	    }
+	  }
+
+	  function key(input) {
+	    if(input.length == 0 || input[0] == "&" || input[0] == "=")  {
+	      return new Result("",input)
+	    } else {
+	      k = key(input.substring(1))
+	      k.result = input[0] + k.result
+	      return k
+	    }
+	  }
+
+	  function value(input) {
+	    if(input.length == 0 || input[0] == "&")  {
+	      return new Result("",input)
+	    } else {
+	      v = value(input.substring(1))
+	      v.result = input[0] + v.result
+	      return v
+	    }
+	  }
+
+	  function eat(char,input) {
+	    if(input.length != 0 && input[0] == char) {
+	      return new Result(char,input.substring(1))
+	    } else {
+	      return new Result(null,input)
+	    }
+	  }
+
+	  function Result(result,remainder) {
+	    this.result    = result
+	    this.remainder = remainder
+	  }
+
+	  function KeyValue(key,value) {
+	    this.key   = key
+	    this.value = value
+	  }
+	  
        //-->
     </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
