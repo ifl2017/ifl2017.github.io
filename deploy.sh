@@ -19,7 +19,8 @@ LOCAL_DIR=./
 
 if [ `pwd | xargs basename` = "ifl2016-website" ]
 then
-    if [ `git branch | grep "master"` = "* master" ]
+    BRANCH=`git branch | grep "master"`
+    if [ "$BRANCH"="* master" ]
     then
 	
 	echo -n "Please enter your username: "
