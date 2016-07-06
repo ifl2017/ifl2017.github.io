@@ -63,7 +63,6 @@
       <div class="page-header text-center">
 	<h1>
 	  IFL 2016 Registration <br />
-	  <p class="text-danger">REMOVE TEST PARAMETER BEFORE DEPLOYMENT</p>
 	</h1>
       </div>
       
@@ -232,11 +231,14 @@ registration form <strong>before</strong> paying the registration fee.
 	    payee       = "400/0013/40962"
             currency    = "EUR"
             sub         = "X"
-	    test        = "X"
 	    language    = "en_US"
             description = "IFL2016" + "-" + student + "-" + bird
 	    secure      = "X"
 	    result_url  = "dtai.cs.kuleuven.be/events/ifl2016/result.html"
+
+	    test        = ""
+	    // uncomment the next line to enable testing mode
+	    // test        = "X"
 
 	    base_url    = "https://www.kuleuven.be/sapredir/kredietbetaling_Detail.html"
 
