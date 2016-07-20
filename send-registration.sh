@@ -24,6 +24,9 @@ echo "Details:" >> $Message
 echo "Registration Type: $RegistrationType" >> $Message
 echo "Name: $Name $Surname" >> $Message
 echo "" >> $Message
+echo "A list of suggested hotels can be found here: https://goo.gl/h5FRtH" >> $Message
+echo "If you want to share with the other participants where you are staying, you can add your hotel and name in the document." >> $Message
+echo "" >> $Message
 echo "Contact the organizing committee <ifl2016@cs.kuleuven.be> with any questions or concerns." >> $Message
 echo "" >> $Message
 echo "Best regards," >> $Message
