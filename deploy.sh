@@ -30,7 +30,7 @@ then
        echo [local] from $LOCAL_DIR
        echo [$REMOTE] to $REMOTE_DIR
 
-       rsync -rav --chmod="a+r,g+w" --exclude "*~" --exclude "deploy.sh" $LOCAL_DIR/* $user@$REMOTE:$REMOTE_DIR
+       rsync -rav --chmod="a+r,g+w" --exclude "*~" --exclude "*.sh" $LOCAL_DIR/* $user@$REMOTE:$REMOTE_DIR
 
        if [ $? -eq 0 ]
        then
