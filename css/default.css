@@ -37,6 +37,15 @@ div.info{color:#555;font-size:14px;font-style:italic}
     color: #D00
 }
 
+.program-name {
+//    width: 100%;
+}
+.program-start {
+    width: 9%;
+}
+.program-end {
+    width: 9%;
+}
 /*
 unvisited link
 a:link {color: #009000}
