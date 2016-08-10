@@ -46,6 +46,15 @@ div.info{color:#555;font-size:14px;font-style:italic}
 .program-end {
     width: 9%;
 }
+.program-session {
+    background-color: #f9f9f9;
+    border-color: #bce8f1;
+}
+.program-keynote {
+    background-color: #f0f0f0;
+    border-color: #bce8f1;
+}
+
 /*
 unvisited link
 a:link {color: #009000}
