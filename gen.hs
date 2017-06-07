@@ -7,6 +7,7 @@ import Data.Text (Text)
 data PC = PC (Html ()) (Html ()) (Html ()) Text
 
 pc = [
+  PC "Nicolas Wu (Chair)" "University of Bristol" "UK" "http://zenzike.com/",
   PC "Kenichi Asai" "Ochanomizu University" "Japan" "http://www.is.ocha.ac.jp/~asai/",
   PC "Sandrine Blazy" "University of Rennes 1" "France" "http://www.irisa.fr/celtique/blazy/" ,
   PC "Carlos Camarao" "Universidade Federal de Minas Gerais" "Brazil" "http://homepages.dcc.ufmg.br/~camarao/",
