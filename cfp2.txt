@@ -1,0 +1,160 @@
+IFL 2017 - CALL FOR PAPERS: DEADLINES EXTENDED
+==============================================
+
+29th SYMPOSIUM ON IMPLEMENTATION AND APPLICATION OF FUNCTIONAL LANGUAGES
+========================================================================
+
+
+University of Bristol, UK
+
+In cooperation with ACM SIGPLAN
+
+Wednesday 30 August - Friday 1 September, 2017
+
+http://iflconference.org/
+
+Scope
+-----
+
+The goal of the IFL symposia is to bring together researchers actively engaged
+in the implementation and application of functional and function-based
+programming languages. IFL 2017 will be a venue for researchers to present and
+discuss new ideas and concepts, work in progress, and publication-ripe results
+related to the implementation and application of functional languages and
+function-based programming.
+
+Peer-review
+-----------
+
+Following the IFL tradition, IFL 2017 will use a post-symposium review process
+to produce the formal proceedings. All participants of IFL 2017 are invited to
+submit either a draft paper or an extended abstract describing work to be
+presented at the symposium. At no time may work submitted to IFL be
+simultaneously submitted to other venues; submissions must adhere to ACM
+SIGPLAN's republication policy:
+
+http://www.sigplan.org/Resources/Policies/Republication
+
+The submissions will be screened by the program committee chair to make sure
+they are within the scope of IFL, and will appear in the draft proceedings
+distributed at the symposium. Submissions appearing in the draft proceedings
+are not peer-reviewed publications. Hence, publications that appear only in the
+draft proceedings are not subject to the ACM SIGPLAN republication policy.
+After the symposium, authors will be given the opportunity to incorporate the
+feedback from discussions at the symposium and will be invited to submit a
+revised full article for the formal review process. From the revised
+submissions, the program committee will select papers for the formal
+proceedings considering their correctness, novelty, originality, relevance,
+significance, and clarity. The formal proceedings will appear in the
+International Conference Proceedings Series of the ACM Digital Library.
+
+Important dates
+---------------
+
+Note that the original deadlines for submission and registration have
+been extended.
+
+|                      |                                                           |
+|----------------------|-----------------------------------------------------------|
+| Thu 17 August   2017 | Submission deadline draft papers                          |
+| Fri 18 August   2017 | Notification of acceptance for presentation               |
+| Mon 21 August   2017 | Early registration deadline                               |
+| Mon 21 August   2017 | Submission deadline for pre-symposium proceedings         |
+| Fri 25 August   2017 | Late registration deadline                                |
+| Wed 30 August   2017 - Fri 1 September 2017 | IFL Symposium                      |
+| Mon  4 December 2017 | Submission deadline for post-symposium proceedings        |
+| Wed 31 January  2018 | Notification of acceptance for post-symposium proceedings |
+| Mon 12 March    2018 | Camera-ready version for post-symposium proceedings       |
+
+Submission details
+------------------
+
+Prospective authors are encouraged to submit papers or extended abstracts to be
+published in the draft proceedings and to present them at the symposium. All
+contributions must be written in English. Papers must use the new ACM two
+columns conference format, which can be found at:
+
+http://www.acm.org/publications/proceedings-template
+
+For the pre-symposium proceedings we adopt a 'weak' page limit of 12 pages. For
+the post-symposium proceedings the page limit of 12 pages is firm.
+
+Authors submit through EasyChair:
+
+https://easychair.org/conferences/?conf=ifl2017
+
+Topics
+------
+
+IFL welcomes submissions describing practical and theoretical work as well as
+submissions describing applications and tools in the context of functional
+programming. If you are not sure whether your work is appropriate for IFL 2017,
+please contact the PC chair at nicolas.wu@bristol.ac.uk. Topics of interest include,
+but are not limited to:
+
+- language concepts
+- type systems, type checking, type inferencing
+- compilation techniques
+- staged compilation
+- run-time function specialization
+- run-time code generation
+- partial evaluation
+- (abstract) interpretation
+- metaprogramming
+- generic programming
+- automatic program generation
+- array processing
+- concurrent/parallel programming
+- concurrent/parallel program execution
+- embedded systems
+- web applications
+- (embedded) domain specific languages
+- security
+- novel memory management techniques
+- run-time profiling performance measurements
+- debugging and tracing
+- virtual/abstract machine architectures
+- validation, verification of functional programs
+- tools and programming techniques
+- (industrial) applications
+
+Peter Landin Prize
+------------------
+
+The Peter Landin Prize is awarded to the best paper presented at the symposium
+every year. The honored article is selected by the program committee based on
+the submissions received for the formal review process. The prize carries a
+cash award equivalent to 150 Euros.
+
+Programme committee
+-------------------
+
+Chair: Nicolas Wu, University of Bristol, UK
+
+- Kenichi Asai, Ochanomizu University, Japan
+- Sandrine Blazy, University of Rennes 1, France
+- Carlos Camarao, Universidade Federal de Minas Gerais, Brazil
+- Stephen Dolan, University of Cambridge, UK
+- Jurriaan Hage, Utrecht University, Netherlands
+- Yukiyoshi Kameyama, University of Tsukuba, Japan
+- Benjamin Lerner, Brown University, USA
+- Bas Lijnse, Radboud University, Netherlands
+- Garrett Morris, University of Kansas, USA
+- Miguel Pagano, Universidad Nacional de Córdoba, Argentina
+- Tomas Petricek, Alan Turing Institute, UK
+- Maciej Piróg, University of Wrocław, Poland
+- Exequiel Rivas, Universidad Nacional de Rosario, Argentina
+- Neil Sculthorpe, Nottingham Trent University, UK
+- Melinda Tóth, Eötvös Loránd University, Hungary
+- Phil Trinder, Glasgow University, UK
+- Kanae Tsushima, National Institute of Informatics, Japan
+- Marcos Viera, Universidad de la Republica, Uruguay
+- Meng Wang, University of Kent, UK
+
+Venue
+-----
+
+The IFL 2017 will be held in association with the Department of
+Computer Science, University of Bristol, UK. Bristol is located in
+South West England, and can be easily reached from Bristol Airport.
+See the website for more information on the venue.
