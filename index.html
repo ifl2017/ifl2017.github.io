@@ -904,7 +904,23 @@ Here is the list of <a href="accepted.html">accepted papers</a>.
 Prospective authors are encouraged to submit papers or extended abstracts to be
 published in the draft proceedings and to present them at the symposium. All
 contributions must be written in English. Papers must adhere to the standard
-ACM SIGPLAN two columns conference format, which can be found at <a href="http://www.sigplan.org/Resources/Author/">http://www.sigplan.org/Resources/Author/</a>.
+ACM SIGCONF (sigconf) two columns conference format, which can be found at
+<a href="https://www.acm.org/publications/proceedings-template">https://www.acm.org/publications/proceedings-template</a>.
+
+Specifically, you must use the `sigconf` option of the `acmart`
+package, which can be included in LaTeX with the following:
+</p>
+
+<code>
+<pre>
+\documentclass[sigconf]{acmart}
+\acmConference[IFL'17]{International Symposium on Implementation and Application of Functional Languages}{August 2017}{Bristol, United Kingdom}
+\acmYear{2017}
+\copyrightyear{2017}
+</pre>
+</code>
+
+<p>
 For the pre-symposium proceedings we adopt a
 'weak' page limit of 12 pages. For the post-symposium proceedings the page
 limit of 12 pages is firm.
